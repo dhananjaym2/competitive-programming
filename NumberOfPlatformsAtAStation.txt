@@ -1,0 +1,22 @@
+                   T1     T2    T3      T4     T5    T6
+Input:  arr[]  = {9:00,  9:40, 9:50,  11:00, 15:00, 18:00}
+        dep[]  = {20:10, 19:00, 11:20, 11:30, 19:00, 20:00}
+
+
+Algo to find the number of platforms required.
+
+N square
+
+Find the no. of intersections in the train time.
+
+Like a Gantt chart
+
+.........9-----9:10........ 
+
+
+For i in  
+If (Arr time of Ti >  Arr time of T1) {
+	if (Arr time of 
+ Platforms +1
+}
+

@@ -1,0 +1,95 @@
+Problem 1:- Move Zeroes
+Given an array nums, write a function to move all 0's to the beginning  of it while maintaining the relative order of the non-zero elements.
+Example:
+Input: [0,1,5,0,3,12]
+Output: [0, 0, 1,5,3,12]
+Note:
+You must do this in-place without making a copy of the array.
+Minimize the total number of operations.
+ 
+ 
+I will have 2 pointers, one will begin at start and other will begin at end.
+Start = 0;
+End = nums.length( );
+nums[start]
+/*********/
+Int pivot = 0; // 1
+For (int index = 0; i < nums.length(); i++) {
+	//Get item
+	Int item = nums[index];
+	//if item at the pivot position is 0.  increase pivot + 1. then continue
+	If (item == 0) {
+		Continue;
+	} else {
+	// if item is not 0, pivot remains same
+	// find position of 0 (start from the (pivot +1) to end of array)
+		For (int zeroIndex = index; zeroIndex < nums.length(); zeroIndex++) {
+			If (nums[zeroIndex] ==  0) {
+				For (int numToSwap = zeroIndex; numToSwap > index; numToSwap--) 
+{// swap
+					Int temp = nums[numToSwap] ;
+					nums[numToSwap] = nums[(numToSwap - 1)] ;
+					nums[(numToSwap - 1)] = temp ;
+				}
+			} else {
+				continue;
+			}
+		}
+	// if 0 is available then move all items ahead.
+	// loop 
+nums[index]
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Problem 2:- Reverse a word without affecting the special chars
+Input:  "Ab,c,de!$"
+Output:  "ed,c,bA!$"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ A b c d
+Problem 3: Undo-Redo functionality 
+ 
+Stack DS
+undo: <<<<1, 2, 5 <<<<
+Redo: 4, 3
+Pivot
+Queue: 1, 2, 
+ 
+Test
+ 
+1 2 3
+ 
+4 5
+ 
